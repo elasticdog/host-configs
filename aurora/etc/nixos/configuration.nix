@@ -22,6 +22,7 @@
 
   environment.systemPackages = with pkgs; [
     fish
+    git
     htop
     lsof
     neovim
