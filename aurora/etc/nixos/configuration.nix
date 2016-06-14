@@ -18,6 +18,8 @@
     stateVersion = "16.03";
   };
 
+  nix.useChroot = true;
+
   environment.systemPackages = with pkgs; [
     fish
     htop
