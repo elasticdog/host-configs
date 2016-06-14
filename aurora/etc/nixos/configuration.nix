@@ -13,7 +13,10 @@
 
   networking.hostName = "aurora";
 
-  system.stateVersion = "16.03";
+  system = {
+    autoUpgrade.enable = true;
+    stateVersion = "16.03";
+  };
 
   environment.systemPackages = with pkgs; [
     fish
