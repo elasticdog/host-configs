@@ -34,6 +34,7 @@
       startWhenNeeded = true;
       permitRootLogin = "no";
       passwordAuthentication = false;
+      authorizedKeysFiles = [ "/etc/ssh/authorized_keys.d/%u" ];
     };
 
     timesyncd.enable = true;
